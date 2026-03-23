@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>HTML Email Template Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--[if mso]>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+    <![endif]-->
+    <style type="text/css">
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 0;
+        }
+        p {
+            font-size: 16px;
+        }
+        img {
+            border: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #e8fbfa;
+            font-size: 16px;
+        }
+        .content {
+            line-height: 20px;
+            font-size: 16px;
+        }
+        .browser-link {
+            color: #3d3d3d !important;
+        }
+        .bluelink {
+            text-decoration: none;
+            color: #1e5d7b !important;
+        }
+        .white-dark-bg-text {
+            color: #ffffff !important;
+        }
+        .red-dark-bg-text {
+            color: #d12f25 !important;
+        }
+        .column {
+            border-spacing: 0;
+            vertical-align: top;
+            width: 100%;
+            display: inline-block;
+            color: #fff;
+        }
+        .column-one-half {
+            max-width: 300px;
+        }
+
+        span.Object {
+            color: inherit !important;
+        }
+        span.Object-hover {
+            color: inherit !important;
+            text-decoration:none !important;
+        }
+
+        u + .body .gmail-blend-screen { background:#000; mix-blend-mode:screen; }
+        u + .body .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
+
+        .ExternalClass {
+            width: 100%;
+        }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        a[x-apple-data-detectors=true]{
+            color: inherit !important;
+            text-decoration: inherit !important;
+        }
+
+        @media screen and (max-width: 599.98px) {
+            .col-logo { 
+                width: 50% !important; 
+                padding-left: 20px !important; 
+                padding-right: 5px !important;
+            }
+            .col-link { 
+                width: 50% !important; 
+                padding-left: 5px !important;
+                padding-right: 20px !important; 
+            }
+            .col-link a { 
+                font-size: 12px !important; 
+            }
+            .padding-col-right {
+                padding-right: 0px !important;
+            }
+            .padding-col-left {
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+            .cta-text-center {
+                text-align: center !important;
+            }
+            .padding-footer {
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+            }
+            .brand-logos {
+                padding: 0px !important;
+            }
+            .brand-logos img {
+                width: 90px !important;
+            }
+        }
+        @media screen and (max-width: 499.98px) {
+            .col-logo { 
+                width: 50% !important; 
+                padding-left: 10px !important; 
+                padding-right: 5px !important; 
+            }
+            .col-link { 
+                width: 50% !important; 
+                padding-left: 5px !important; 
+                padding-right: 10px !important; 
+            }
+            .red-button {
+                font-size: 13px !important;
+                padding: 15px 40px !important;
+            }
+            .padding-footer {
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+        }
+        @media screen and (max-width: 399.98px) {
+            .col-logo { 
+                width: 50% !important; 
+                padding-left: 3px !important; 
+                padding-right: 3px !important;
+            }
+            .col-logo img {
+                width: 120px;
+                max-width: 120px;
+            }
+            .col-link { 
+                width: 50% !important; 
+                padding-left: 3px !important; 
+                padding-right: 3px !important; 
+            }
+            .col-link a { 
+                font-size: 10px !important; 
+            }
+            .red-button {
+                font-size: 13px !important;
+                padding: 15px 30px !important;
+            }
+            .padding-footer {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
+            .brand-logos img {
+                width: 70px !important;
+            }
+        }
+        @media screen and (max-width: 299.98px) {
+            .red-button {
+                font-size: 13px !important;
+                padding: 15px 15px !important;
+            }
+            .brand-logos {
+                padding: 0px 40px !important;
+            }
+        }
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+        @media (prefers-color-scheme: dark) {
+            body, table, .darkmode-bg {
+                background: #191e27 !important;
+                color: #ffffff !important;
+            }
+            [data-ogsc] body, table, .darkmode-bg {
+                background: #191e27 !important;
+                color: #ffffff !important;
+            }
+            .browser-link {
+                color: #ffffff !important;
+            }
+            .darkmode-transparent {
+                background-color: transparent !important;
+            }
+            [data-ogsc] .darkmode-transparent {
+                background-color: transparent !important;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    </style>
+
+    <!--[if mso]>
+        <style type="text/css">
+        body {background-color: #dde0e1 !important;}
+        body, table, td, p, a {font-family: 'Lato', Arial, Helvetica, sans-serif !important;}
+        table {border-spacing: 0 !important;border-collapse: collapse !important;}
+        </style>
+    <![endif]-->
+        
+    </head>
+    <body class="body" xml:lang="en" style="margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
+    <div style="width: 100%; table-layout:fixed; background-color: #dde0e1; color:#616670; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
+        <div style="max-width: 600px; background-color: #ffffff; color:#616670; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0, 0, 0, .2);margin: 0 auto;">
+
+            <!-- Preheader (remove comment) -->
+            <div style="font-size: 0px; color: #fafdfe; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
+                Portfolio email sample for layout, responsiveness, content flow, and inbox rendering review.
+                <!-- Add Preheader Text Here (85-100 characters in length) -->
+                &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+            </div>
+            <!-- End Preheader (remove comment) -->
+        
+            <!--[if mso]>
+                <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #3d3d3d;" role="presentation">
+                <tr>
+                <td style="padding:0;">
+            <![endif]-->
+
+            <table align="center" style="border-spacing:0; border-collapse: collapse; color:#616670; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 16px; background-color: #ffffff; margin: 0 auto; padding:0; width: 100%; max-width: 600px;" role="presentation">
+
+            
+<!-- START LOGO -->
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" style="border-spacing: 0; border-collapse: collapse;" role="presentation">
+                            <tr>
+                                <td width="300" class="col-logo" style="padding: 20px 30px; text-align: left; vertical-align: middle;">
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/dd7e4a72-ae4c-d3a8-6e42-4368b9700b98.png" 
+                                            alt="Logo" width="150" 
+                                            style="display:block; max-width:150px; border-radius:8px; border:0;">
+                                    </a>
+                                </td>
+                                <td width="300" class="col-link" style="padding: 20px 30px; text-align: right; vertical-align: middle;">
+                                    <p style="font-size: 12px; margin: 0;">
+                                        <a class="browser-link" href="https://example.com/" target="_blank" 
+                                        style="font-size: 12px; text-decoration: underline;">
+                                            View this email in browser
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+<!-- END LOGO -->
+
+
+<!-- START BANNER -->
+                <tr>
+                    <td style="padding: 0; line-height: 0px;">
+                        <a href="https://example.com/" target="_blank">
+                            <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/_compresseds/70a381ee-cbae-f8b5-6e48-34449a79efc9.jpg" alt="Manufacturing" title="Manufacturing" width="600" style="border: 0; width: 100%;">
+                        </a>
+                    </td>
+                </tr>
+<!-- END BANNER -->
+
+<!-- START TITLE CTA -->
+                <tr>
+                    <td style="padding: 15px 0 25px;background-color: #191e27;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+
+                            <tr>
+                                <td style="padding: 15px 60px 0px; text-align: left;background-color: #191e27;">
+                                <h2 style="font-size: 22px;font-weight: 400;margin: 0;"><span class="white-dark-bg-text" style="font-style: italic; color: #ffffff;">LOREM</span> <span class="red-dark-bg-text" style="color: #d12f25;">ipsum dolor.</span></h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 60px; text-align: left;background-color: #191e27;">
+                                <h2 style="font-size: 22px;font-weight: 400;margin: 0;letter-spacing: 1px;"><span class="white-dark-bg-text" style="color: #ffffff;">Lorem ipsum dolor sit amet.</span></h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 15px 60px; text-align: left;background-color: #191e27;">
+                                <p style="font-size: 16px;font-weight: 300;margin: 0;"><span class="white-dark-bg-text" style="color: #ffffff;">Lorem ipsum dolor sit amet consectetur.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 15px 0 15px; text-align: left; background-color: #191e27;">
+                                <tr>
+                                    <td align="left" style="padding: 0 60px 10px;background-color: #191e27;">
+                                        <table align="left" role="presentation" style="border-spacing:0;">
+                                            <tr>
+
+                                            <td align="center" bgcolor="#d12f25">
+                                                <a class="red-button" href="https://example.com/10" target="_blank" style="font-size: 13px;text-decoration: none;color: #ffffff;background-color: #d12f25;padding:16px 48px;border: 0px solid #d12f25;display: inline-block;font-weight: 300;">
+                                                    Learn More
+                                                </a>&nbsp;
+                                            </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+<!-- END TITLE CTA -->
+
+
+<!-- START TITLE TWO COLUMNS -->
+                <tr>
+                    <td style="padding: 15px 18px 10px;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+
+                            <tr>
+                                <td style="padding: 30px 50px 0px; text-align: center;">
+                                <h2 style="font-size: 21px;font-weight: 600;margin: 0;">LOREM <span style="color: #d12f25; font-weight: 900;">ipsum dolor sit amet consectetur,</span> adipisicing elit. Laudantium, magnam.</h2>
+                                </td>
+                                 
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+<!-- END TITLE TWO COLUMNS -->
+
+
+<!-- START TWO COLUMNS -->
+                <tr>
+                    <td style="padding: 10px 0 10px;">
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+
+                            <tr>
+                                <td class="column-wrapper fluid-hybrid" style="padding: 0; font-size: 0; text-align: center;">
+
+                                <!--[if mso]>
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                    <tr>
+                                    <td width="300" valign="middle" style="padding: 0;">
+                                <![endif]-->
+
+                                <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 300px; display: inline-block; color: #616670;" role="presentation">
+                                    <tr>
+                                        <td class="padding padding-col-left" style="padding: 10px 0 10px 60px;">
+                                            <a href="https://example.com"><img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/0028f769-b66c-9cff-f79e-3d0aaa8ad830.jpg" width="220" alt="Image Description"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!--[if mso]>
+                                    </td><td width="300" valign="middle" style="padding: 0;">
+                                <![endif]-->
+
+                                <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 300px; display: inline-block; color: #616670; line-height: 16px;" role="presentation">
+                                    <tr>
+                                        <td class="padding second padding-col-right" style="padding: 5px 60px 20px 0; text-align: center;">
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                    <td valign="middle" style="padding: 0; text-align: center;">
+                                                        <p style="margin: 0; font-size: 18px; font-weight: 500; color: #616670;">
+                                                            Lorem ipsum dolor sit amet consectetur.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="padding second padding-col-right" style="padding: 5px 60px 5px 0; text-align: center;">
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                    <td width="50" valign="middle" style="padding: 0 5px 0 0;">
+                                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/e8b43501-3dbe-3179-a2b4-5a0b62f7590a.png" width="45" alt="Money">
+                                                    </td>
+                                                    <td valign="middle" style="padding: 0; text-align: left;">
+                                                        <p style="margin: 0; font-size: 12px; font-weight: 500; color: #616670; text-transform: uppercase; font-style: italic;">
+                                                            Lorem  <span style="color: #c9342c;">ipsum dolor</span> sit amet consectetur adipisicing.
+                                                        </p>
+                                                        <p style="padding: 3px 0 0 0; margin: 0; font-size: 12px; color: #616670; font-style: italic; font-weight: 400;">
+                                                            Lorem ipsum dolor sit amet consectetur.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="padding second padding-col-right" style="padding: 5px 60px 5px 0; text-align: center;">
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                    <td width="50" valign="middle" style="padding: 0 5px 0 0;">
+                                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/4f521e4d-36c2-fd8a-5ad4-a0402abf6270.png" width="45" alt="Person">
+                                                    </td>
+                                                    <td valign="middle" style="padding: 0; text-align: left;">
+                                                        <p style="margin: 0; font-size: 12px; font-weight: 500; color: #616670; text-transform: uppercase; font-style: italic;">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <p style="padding: 3px 0 0 0; margin: 0; font-size: 12px; color: #616670; font-style: italic; font-weight: 400;">
+                                                            Lorem ipsum dolor sit amet consectetur.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="padding second padding-col-right" style="padding: 5px 60px 5px 0; text-align: center;">
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                                <tr>
+                                                    <td width="50" valign="middle" style="padding: 0 5px 0 0;">
+                                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/c7251f5a-8aa1-f19e-a804-a6ba3fe8077a.png" width="45" alt="Water">
+                                                    </td>
+                                                    <td valign="middle" style="padding: 0; text-align: left;">
+                                                        <p style="margin: 0; font-size: 12px; font-weight: 500; color: #616670; text-transform: uppercase; font-style: italic;">
+                                                            Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <p style="padding: 3px 0 0 0; margin: 0; font-size: 12px; color: #616670; font-style: italic; font-weight: 400;">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                <![endif]-->
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr> 
+<!-- END TWO COLUMNS -->
+
+
+<!-- START CTA -->
+                <tr>
+                    <td class="darkmode-bg" style="padding: 5px 10px 10px; background-color: #ffffff;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                                <td class="darkmode-bg" class="cta-text-center" style="padding: 30px 50px 0px; text-align: left; background-color: #ffffff;">
+                                <p style="font-size: 14px;font-weight: 400;margin: 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, tenetur cupiditate dolor in quo ab!</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> 
+                <tr>
+                    <td style="padding: 0; text-align: center;background-color: #ffffff;">
+                        <tr>
+                            <td class="darkmode-bg" align="center" style="padding: 20px 0 50px; background-color: #ffffff;">
+                                <table align="center" role="presentation" style="border-spacing:0;">
+                                    <tr>
+                                        <td align="center" bgcolor="#d12f25">
+                                            <a class="red-button" href="https://example.com/10" target="_blank" style="font-size: 13px;text-decoration: none;color: #ffffff;background-color: #d12f25;padding:15px 50px;border: 2px solid #d12f25;display: inline-block;font-weight: 300;">
+                                                Discover Here
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+<!-- END CTA -->
+
+
+<!-- START FOOTER -->
+                <tr>
+                    <td class="darkmode-bg-footer" style="padding: 0; background-color: #f4f5f7;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+
+                            <tr>
+                                <td style="padding: 40px 20px 20px; color: #979797; text-align: center; font-size: 16px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 16px; margin: 0; font-weight: 300; color: #979797;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="darkmode-bg brand-logos" style="background-color: #f4f5f7; text-align: center; padding: 12px 0 12px 0;">
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/8cac25c2-b807-4f6d-55cc-ebdcebe4b8ce.png" alt="Brand 1" width="100" style="border: 0; border-right: 1px solid #979797;">
+                                    </a>
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/d0e7a1fb-c46f-7477-d72e-c431878baf4f.png" alt="Brand 2" width="100" style="border: 0; border-right: 1px solid #979797;">
+                                    </a>
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/c3891c6c-7b00-ff92-fd34-c981fabf3cfa.png" alt="Brand 3" width="100" style="border: 0; border-right: 1px solid #979797;">
+                                    </a>
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/64c9cfff-fd85-0091-989a-eb33d4c61013.png" alt="Brand 4" width="100" style="border: 0;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" height="1" style="border-bottom: 1px solid #979797; height: 1px; width: 100px; max-width: 100px; padding: 0 32px;" width="100px">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #f4f5f7; padding: 0;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+
+                            <tr>
+                                <td class="darkmode-bg" style="background-color: #f4f5f7; padding: 20px 0; text-align: center;">
+                                <a href="https://example.com/" target="_blank">
+                                    <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/dd7e4a72-ae4c-d3a8-6e42-4368b9700b98.png" alt="Logo" title="Logo" width="140" style="border: 0;">
+                                </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 30px 0px; color: #979797; text-align: center; font-size: 12px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 12px; margin: 0; line-height: 20px;">Company Name</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 30px 0px; color: #979797; text-align: center; font-size: 12px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 12px; margin: 0; line-height: 20px;">123&#8203; Street Road, City, State 55555</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 30px 40px; color: #979797; text-align: center; font-size: 12px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 12px; margin: 0; line-height: 20px; color: #979797;">
+                                            <a class="browser-link" href="https://example.com/" target="_blank" style="color: #213561; text-decoration: underline; font-size: 12px;">
+                                                www.website.com
+                                            </a> | 1&#8203;-800-888-8888</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="padding-footer" style="padding: 0 80px 0px; color: #979797; text-align: center; font-size: 12px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 12px; margin: 0; line-height: 20px;">All names, logos and trademarks are the property of Company Name. All Rights Reserved. Visits to this site and use of the information hereon is subject to our 
+                                            <a class="browser-link" href="https://example.com/" target="_blank" style="color: #213561; text-decoration: underline; font-size: 12px;">
+                                                Terms of Use
+                                            </a> 
+                                            and 
+                                            <a class="browser-link" href="https://example.com/" target="_blank" style="color: #213561; text-decoration: underline; font-size: 12px;">
+                                                Privacy Policy</a>.</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 50px 30px 0px; color: #979797; text-align: center; font-size: 12px;">
+                                <div class="gmail-blend-screen">
+                                    <div class="gmail-blend-difference">
+                                        <p style="font-size: 12px; margin: 0; line-height: 20px;">Click 
+                                            <a class="browser-link" href="https://example.com/" target="_blank" style="color: #213561; text-decoration: underline; font-size: 12px;">here</a> to unsubscribe.</p>
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="darkmode-bg" style="background-color: #f4f5f7; text-align: center; padding: 10px 0 8px 0;">
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/aeb2bfab-7a24-1995-17e3-afec6fbd35c3.png" alt="Facebook" width="20" style="border: 1px solid #979797; border-radius: 5px; padding: 8px;">
+                                    </a>
+                                    <a href="https://example.com/" target="_blank">
+                                        <img src="https://mcusercontent.com/d766378279a4994d9debd33a8/images/762296d5-e06c-e291-7859-1837003d1a05.png" alt="Twitter" width="20" style="border: 1px solid #979797; border-radius: 5px; padding: 8px;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+<!-- END FOOTER -->
+
+
+            </table>
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+      
+        </div>
+   </div>
+
+</body>
+</html>
